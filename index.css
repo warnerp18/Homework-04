@@ -1,24 +1,28 @@
 * {
 	background-color: rgb(72,144,207);
+
 }
 
 div{
 	display: inline-block;
 	width: 33%;
-	background-color: currentColor
+	background-color: currentColor;
+	float: left;
+	color: white	
 }
 
-span{
-	display: block;
+span {
+	display: inline-block;
 	color: white;
-	text-align: center;
+	text-align: left;
 	width:100%;
+	padding-bottom: .5em;
 }
 
 span:required {
 	background-color: currentColor;
 	color: white;
-	width: 100%;
+	width: 33%%;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -26,33 +30,52 @@ span:required {
 
 ::webkit-input-placeholder {
 	content: "";
-	color: rgb(32,87,137);
-
+	color: rgb(32,87,137);	
 }
 
 :-ms-input-placeholder {
-  color: rgb(32,87,137);
-
+ 	color: rgb(32,87,137);
  }
-#left-top {
-	padding-bottom: 3em;
-	
+
+ textarea:focus, input:focus {
+    color: #ffffff;
 }
 
-#left-middle {
-	padding-bottom: 3em;
-}
+<input class="textbox"type="text"> 
+<br><br> 
+<input class="textbox"type="text"> 
+<br><br> 
+<input class="textbox"type="text"> 
+  
+ 
+.textbox:focus { 
+    outline: none; 
+    border: 1px solid rgb(31,85,136); 
+    
+} 
 
-#left-bottom {
-	padding-bottom: 3em;
-}
+input, select, textarea{
+    color: #ffffff;
+    width: 19em;
+    border: .15em solid	white;
 
+    }
+
+#country {
+	color: white;
+}
 
 select {
 	font-family: sans-serif;
 	color: white;
 	border-radius: 0%;
+	width: 12em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
+#middle-top {
+	position: top
+}
 
 
